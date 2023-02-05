@@ -1,4 +1,4 @@
-FROM openjdk:11.0.17
-EXPOSE 8070
-ADD target/*.jar my-app-1.0-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/my-app-1.0-SNAPSHOT.jar"]
+FROM openjdk:8
+EXPOSE 8180
+ADD target/devops-integration.jar devops-integration.jar
+ENTRYPOINT ["java","-jar","/devops-integration.jar"]
