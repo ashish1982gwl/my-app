@@ -1,3 +1,4 @@
+FROM  openjdk:17
 EXPOSE 9090
-COPY /target/my-app.jar /home/ashish/Public/Jars/my-app.jar 
-CMD ["java","-jar","/home/ashish/Public/Jars/my-app.jar"]
+COPY target/my-app.jar my-app.jar 
+CMD ["java","-jar","my-app.jar"]
